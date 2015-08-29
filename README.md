@@ -27,7 +27,7 @@ for all files of that data type. Currently, the script ignores all files that
 have 'None' as a data type
 
 ##Arguments
-**synID: ** The Synapse ID of the project
+***synID:*** The Synapse ID of the project
 
 ##Contact
 Reza Hammond  

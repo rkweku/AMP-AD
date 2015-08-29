@@ -206,24 +206,23 @@ def getSynIDs():
 
 def main():
 
+    # Get all of the files within the project for the given global synID
     studies = getSynIDs()
 
-    print studies['ROSMAP'].keys()
-    print studies['ROSMAP']
+    ### Loop through all studies with this 
+    #for study in studies:
+
+    ### Need to get the key file for initial comparisons
     # Download the key file
     #keyFile = getSynapseFile(keySynID)
 
-    #for study in studies:
-        
+    
     # Download clinical file
-    clinicalFile = getSynapseFile(clinicalSynID)
+    #clinicalFile = getSynapseFile(clinicalSynID)
 
-    createAMPADTable(keyFile, clinicalFile)
+    # Create the merged table from the key file with the key and clinical
+    # data. Then merge these with the available sequencing data
+    #createAMPADTable()
     
-#    keyList = keyFile['projid']
-#    print(keyList[keyList==3380931].index.tolist())
-
-    
-
 if __name__ == "__main__":
     main()
